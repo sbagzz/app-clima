@@ -28,9 +28,3 @@ jobs:
 
     - name: Build da aplicação
       run: npm run build
-
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: dist-${{ matrix.node-version }}
-        path: dist/
